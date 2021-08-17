@@ -18,7 +18,7 @@
 // right pointer will increase by one every loop
 // loop untill out of wordArray Length
 // return resultObj
-
+// for longestSubstring function will take O(n) time complexity and O(1) space complexity
 function longestSubstring(wordArray) {
   const words = perm(wordArray);
   const resultObj = { letter: "", length: 0 };
@@ -41,6 +41,7 @@ function longestSubstring(wordArray) {
   return resultObj;
 }
 
+// perm function will take O(n!) time complexity O(n) space complexity
 function perm(xs) {
   let ret = [];
   for (let i = 0; i < xs.length; i = i + 1) {
