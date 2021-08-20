@@ -41,7 +41,7 @@ function longestSubstring(wordArray) {
   return resultObj;
 }
 
-// perm function will take O(n!) time complexity O(n) space complexity
+// perm function will take O(n!) time complexity O(n!) space complexity
 function perm(xs) {
   let ret = [];
   for (let i = 0; i < xs.length; i = i + 1) {
